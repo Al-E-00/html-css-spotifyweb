@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="app-container">
+
+        
+        <!-- sidebar  -->
+        <div class="sidebar d-flex flex-no-shrink flex-column">
+
+                <!-- logo sidebar -->
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Full logo Spotify">
+                </div>
+
+                <!-- button navigation in app -->
+                <div class="app-navigation-buttons-section ">
+                    <div class="button-app-navigation d-flex align-content-flex">
+                        <div class="image-nav">
+                            <img src="img/home.svg" alt="Home icon">
+                        </div>
+                        <div class="text-nav d-flex align-items-flex">
+                            <h3>Home</h3>
+                        </div>
+                    </div>
+
+                    <div class="button-app-navigation d-flex align-content-flex">
+                        <div class="image-nav">
+                            <img src="img/search.svg" alt="Search icon">
+                        </div>
+                        <div class="text-nav d-flex align-items-flex">
+                            <h3>Cerca</h3>
+                        </div>
+                    </div>
+
+                    <div class="button-app-navigation d-flex align-content-flex">
+                        <div class="image-nav">
+                            <img src="img/libreria.svg" alt="Library icon">
+                        </div>
+                        <div class="text-nav d-flex align-items-flex">
+                            <h3>La tua libreria</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- playlist section -->
+
+                <div class="playlist-section">
+                    <h2>Playlist</h2>
+                </div>
+                <!-- create new playlist section -->
+                <div class="new-playlist d-flex">
+                    <div class="icon-new-playlist d-flex align-items-flex justify-content-flex">
+                        <a href="#"><h3>+</h3></a>
+                    </div>
+                    <span class="d-flex align-items-flex">Crea Playlist</span>
+                </div>
+                <!-- playlist list (lunghezza statica, grow:1, overflow: auto)-->
+                <div class="playlist-list">
+                    <ul>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- last section with account information -->
+
+                <div class="account-section d-flex flex-no-shrink flex-column ">
+                    <!-- install app -->
+
+                    <div class="install-app d-flex">
+                        <div class="icon-install-app">
+                            <img src="img/download.svg" alt="Download icon">
+                        </div>
+                        <div class="text-install-app">
+                            <a href="#">Installa app</a>
+                        </div>
+                    </div>
+                    <!-- account-name -->
+                    <div class="name-account d-flex">
+                        <div class="icon-name-account">
+                            <img src="img/profile.svg" alt="Profile icon">
+                        </div>
+                        <div class="text-name-account">
+                            <h2>John Doe</h2>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- top bar with: effettua l'upgrade/ (position: sticky / shrink: 0) -->
+            <div class="top-bar">
+                <!-- button effettua upgrade -->
+                
+                <button class="btn-nrml"><a href="#">Effettua l'upgrade</a></button>
+            </div>
+
+        <!-- main part (flex-grow:1)-->
+        <div class="main-section">
+
+            <!-- nav-menu main part -->
+
+            <div class="nav-menu-main">
+                <ul class="nav-menu-items">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+
+                <!-- recently-played -->
+                <div class="recently-played">
+
+                    <!-- title: recenly-played -->
+                    <h2></h2>
+
+                    <div class="box-section">
+                        
+                        <!-- music-box -->
+
+                        <div class="box-music">
+                            <div class="image-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-music-box">
+                                <h3 class="main-text-music-box"></h3>
+                                <span class="subtext-music-box"></span>
+                            </div>
+                        </div>
+
+                        <div class="box-music">
+                            <div class="image-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-music-box">
+                                <h3 class="main-text-music-box"></h3>
+                                <span class="subtext-music-box"></span>
+                            </div>
+                        </div>
+
+                        <div class="box-music">
+                            <div class="image-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-music-box">
+                                <h3 class="main-text-music-box"></h3>
+                                <span class="subtext-music-box"></span>
+                            </div>
+                        </div>
+
+                        <div class="box-music">
+                            <div class="image-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-music-box">
+                                <h3 class="main-text-music-box"></h3>
+                                <span class="subtext-music-box"></span>
+                            </div>
+                        </div>
+
+                        <div class="box-music">
+                            <div class="image-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-music-box">
+                                <h3 class="main-text-music-box"></h3>
+                                <span class="subtext-music-box"></span>
+                            </div>
+                        </div>
+
+                        <div class="box-music">
+                            <div class="image-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-music-box">
+                                <h3 class="main-text-music-box"></h3>
+                                <span class="subtext-music-box"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                    
+
+                <!-- creato per -name account- section -->
+
+                <div class="made-for-account">
+
+                    <h2></h2>
+                    <span></span>
+
+                    <!-- music-box -->
+                    <div class="box-section">
+
+                        <div class="box-music">
+                            <div class="image-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-music-box">
+                                <h3 class="main-text-music-box"></h3>
+                                <span class="subtext-music-box"></span>
+                            </div>
+                        </div>
+
+                        <div class="box-music">
+                            <div class="image-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-music-box">
+                                <h3 class="main-text-music-box"></h3>
+                                <span class="subtext-music-box"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- artisti più popolari - section -->
+
+                    <h2></h2>
+                    <span></span>
+
+                    <!-- music-box-rounded -->
+
+                    <div class="box-music">
+                        <div class="image-box image-box-rounded">
+                            <img src="" alt="">
+                        </div>
+                        <div class="text-music-box">
+                            <h3 class="main-text-music-box"></h3>
+                            <span class="subtext-music-box"></span>
+                        </div>
+                    </div>
+
+                    <div class="box-music">
+                        <div class="image-box image-box-rounded">
+                            <img src="" alt="">
+                        </div>
+                        <div class="text-music-box">
+                            <h3 class="main-text-music-box"></h3>
+                            <span class="subtext-music-box"></span>
+                        </div>
+                    </div>
+        </div>
+
+        <!-- player bar part -->
+
+        <div class="player-bar-section">
+            <!-- left menu with song image (image-text-icons)[SHRINK: 0] -->
+            <div class="left-menu-player">
+                <div class="menu-player-image">
+                    <img src="" alt="">
+                </div>
+                <div class="song-title">
+                    <h4></h4>
+                    <span></span>
+                </div>
+                <div class="icons-left-menu-player">
+                    <!-- insert two icons -->
+                </div>
+            </div>
+
+            <!-- main player section -->
+            <div class="main-menu-player">
+                <!-- buttons player -->
+                    <div class="buttons-player">
+                        <!-- insert 5 buttons -->
+                    </div>
+                <!-- progression-bar -->
+                    <div class="progresson-bar">
+                        <!-- insert progression bar + time at the sides -->
+                    </div>
+            </div>
+
+            <!-- right menu player with tools buttons and volume -->
+            <div class="right-menu-player">
+
+                <!-- buttons / tools menu -->
+
+                <div class="tools-menu-player"></div>
+
+                <!-- volume bar  -->
+
+                <div class="volume-bar-section"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

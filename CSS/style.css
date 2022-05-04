@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* sidebar section */
+.sidebar {
+    width: 190px;
+    background-color: black;
+    color: white;
+    padding-left: 1rem;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.logo {
+    width: 7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.app-navigation-buttons-section {
+    padding-bottom: .8rem;
+}
+
+.button-app-navigation .image-nav > img {
+    width: 1.6rem;
+    opacity: 0.6;
+}
+
+.button-app-navigation .text-nav {
+    font-size: .6rem;
+    opacity: 0.6;
+}
+
+
+
+/* playlist section */
+
+.playlist-section > h2 {
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding-bottom: .6rem;
+}
+
+.new-playlist {
+    padding-bottom: .8rem;
+}
+
+.new-playlist .icon-new-playlist {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    opacity: 0.6;
+
+}
+
+.new-playlist .icon-new-playlist > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.new-playlist > span {
+    padding-left: .5rem;
+    font-size: .8rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+/* list-playlist section */
+
+.playlist-list {
+    display: flex;
+    flex-grow: 3;
+}
+
+.playlist-list ul li {
+    list-style: none;
+    padding-bottom: .8rem;
+}
+
+.playlist-list ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+/* side navbar account */
+
+.install-app {
+    align-items: center;
+    align-content: center;
+}
+
+.install-app .icon-install-app img {
+    width: .9rem;
+}
+
+.text-install-app a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+    font-size: .7rem;
+    align-content: center;
+}
+
+.icon-name-account img {
+    width: 1rem;
+}
+
+.text-name-account h2 {
+    font-size: .6rem;
+}
+
+/* button section */
+
+.top-bar {
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    
+}
+
+/* STYLING */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-no-shrink {
+    flex-shrink: 0;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-content-flex {
+    align-content: center;
+}
+
+.align-items-flex {
+    align-items: center;
+}
+
+.justify-content-flex {
+    justify-content: center;
+}
