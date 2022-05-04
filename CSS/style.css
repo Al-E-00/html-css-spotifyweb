@@ -84,6 +84,10 @@ body {
 
 /* playlist section */
 
+.playlist-section {
+    flex-direction: column;
+}
+
 .playlist-title h3 {
     font-size: var(--text-normal);
     color: var(--color-primary-nt-hover);
