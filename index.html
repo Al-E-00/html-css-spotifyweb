@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -250,9 +251,50 @@
 
         <!-- BOTTOM SECTION with player -->
 
-        <div class="player"> 
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore odio vero modi dicta pariatur, laudantium quae maiores fuga in quisquam beatae et commodi fugiat voluptas obcaecati, magni veritatis sint delectus.
-            Voluptates ab laborum aut et error nobis, sit vero alias odit beatae laudantium! Eius eos officiis accusamus repellendus ullam quo debitis aspernatur minus optio, pariatur atque, tenetur cupiditate accusantium asperiores.
+        <div class="player d-flex"> 
+                <div class="active-music-section">
+                    <div class="image-active-music">
+                        <img src="img/sinister.jpeg" alt="Preview music played">
+                    </div>
+                    <div class="name-music-active">
+                        <h3>Sinister</h3>
+                        <span>Brano Nome</span>
+                    </div>
+                    <div class="music-tools">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </div>
+                <div class="player-bar-section d-flex">
+                    <div class="player-button">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <div class="round-button-svg"><i class="fa-solid fa-play"></i></div>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="progression-music-bar">
+                        <div class="time">
+                            <span>0:25</span>
+                        </div>
+                        <div class="progression-bar">
+                            <div class="live-progression-bar"></div>
+                        </div>
+                        <div class="time">
+                            <span>4:35</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-tools-section">
+                    <div class="icon-tools">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-display"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="volume-bar">
+                        <div class="volume-bar-progression"></div>
+                    </div>
+                </div>
         </div>
     </div>
 </body>
