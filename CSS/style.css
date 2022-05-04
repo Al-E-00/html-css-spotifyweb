@@ -196,7 +196,132 @@ body {
 /* main section */
 
 .main-content {
-    background-color: blue;
+    flex-direction: column;
+    background-color: #141922;
+}
+
+
+/* top bar main content */
+
+.top-bar {
+    padding: .8rem .4rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar button {
+    padding: .5rem 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--color-primary-hover);
+
+}
+
+.top-bar button a {
+    text-decoration: none;
+    color: var(--color-primary-hover);
+    text-transform: uppercase;
+    font-size: .6rem;
+    font-weight: 600;
+    padding: .5rem .4rem;
+}
+
+/* album type section*/
+
+.album-main-section {
+    flex-direction: column;
+}
+
+.scroll-album-section {
+    flex-direction: column;
+    overflow: auto;
+}
+
+.genre-music-selection ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    padding: .7rem 0;
+}
+
+.genre-music-selection ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: var(--text-normal);
+    font-weight: 600;
+    color: var(--color-primary-nt-hover);
+}
+
+/* album box-section */
+
+.played-section {
+    flex-direction: column;
+    padding: .8rem 1rem;
+}
+
+.played-section > h2 {
+    color: var(--color-primary-hover);
+}
+
+.played-section > span {
+    font-size: var(--text-small);
+    color: var(--color-primary-nt-hover);
+    font-weight: 600;
+    padding: .7rem 0;
+}
+
+.music-box-section {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    min-width: 700px;
+}
+
+.box-section-space-between {
+    justify-content: space-between;
+}
+
+.music-box {
+    padding: 1rem 0;
+    width: calc((100% / 6) - 1rem);
+
+}
+
+.image-music-box > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.rounded-music-box {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.rounded-music-box > img {
+    object-fit: contain;
+}
+
+.text-music-box {
+    color: var(--color-primary-hover);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-music-box > h3 {
+    font-size: .8rem;
+    padding: .5rem 0;
+}
+
+.text-music-box > span {
+    font-size: var(--text-small);
+    color: var(--color-primary-nt-hover);
+    font-weight: 600;
 }
 
 
