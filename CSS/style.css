@@ -540,6 +540,10 @@ body {
 }
 
 @media screen and (max-width: 530px) {
+    .image-active-music {    
+        flex-shrink: 2;
+    }
+
     .sidebar {
         width: 45px;
         padding: .2rem .6rem;
@@ -596,4 +600,90 @@ body {
     .container-img-account img{
         width: .8rem;
     }   
+
+    .music-tools {
+        padding-left: .6rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .volume-bar {
+        display: none;
+    }
+
+    .other-tools-section {
+        min-width: 0;
+        flex-basis: 100px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .music-tools {
+        display: none;
+    }
+
+    .genre-music-selection ul a {
+        font-size: var(--text-small);
+    }
+
+    .player-button button i {
+        padding: .1rem .8rem;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-primary-hover);
+        font-size: 1rem;
+    }
+}
+
+@media screen  and (max-width: 415px) {
+    .active-music-section {
+        flex-direction: column;
+    }
+
+    .name-music-active {
+        padding: 0;
+    }
+
+    .player-button button i {
+        padding: .1rem .7rem;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-primary-hover);
+        font-size: .9rem;
+    }
+    
+    .player-button button:nth-child(3) i {
+        font-size: 1.2rem;
+    }
+
+    .progression-music-bar {
+        flex-grow: 0;
+        padding-top: .8rem;
+    }
+}
+
+@media screen  and (max-width: 415px) {
+    .genre-music-selection ul a {
+        font-size: .6rem;
+    }
+
+    .played-section > h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen  and (max-width: 360px) {
+    .genre-music-selection ul a {
+        font-size: .5rem;
+    }
+}
+
+@media screen  and (max-width: 345px) {
+    .icon-tools button:nth-child(2), .icon-tools button:nth-child(3) {
+        display: none;
+    }
+
+    .other-tools-section {
+        flex-basis: 40px;
+    }
 }
