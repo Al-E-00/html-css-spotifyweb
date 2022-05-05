@@ -480,8 +480,7 @@ body {
     width: 25%;
     height: 100%;
     border-radius: 2rem;
-    background-color: var(--color-primary-hover);
-    opacity: .8;
+    background-color: rgba(255, 255, 255, 0.832);
 }
 
 .dot-progression-bar {
@@ -537,8 +536,19 @@ body {
     width: 25%;
     height: 100%;
     border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.832);
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.dot-volume-bar {
+    height: .7rem;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
     background-color: var(--color-primary-hover);
-    opacity: .8;
+    align-self: center;
+    display: none;
 }
 
 /* ----------- ANIMATION SECTION -------------- */
@@ -651,6 +661,7 @@ body {
 
 .music-tools button i:hover {
     color: var(--color-primary-hover);
+    transform: scale(1.1);
 }
 
 .progression-bar:hover .live-progression-bar {
@@ -662,7 +673,6 @@ body {
 
 .progression-bar:hover .dot-progression-bar {
     display: inline-block;
-    opacity: 1;
 }
 
 .player-button button:nth-child(3):hover i {
@@ -673,8 +683,18 @@ body {
     transform: scale(1.1);
 }
 
+.volume-bar:hover .volume-bar-progression {
+    background-color:rgb(173, 255, 46);
+}
+
+.volume-bar:hover .dot-volume-bar {
+    display: inline-block;
+}
 
 
+.icon-tools button:hover i {
+    transform: scale(1.1);
+}
 
 
 
@@ -747,6 +767,11 @@ body {
 
     .text-nav-button a {
         display: none;
+    }
+
+    .nav-button-app .icon-nav-button.active:before {
+        
+        left: -40%;
     }
 
     .playlist-section {
