@@ -665,6 +665,14 @@ body {
     opacity: 1;
 }
 
+.player-button button:nth-child(3):hover i {
+    transform: scale(1.2);
+}
+
+.player-button button:hover i{
+    transform: scale(1.1);
+}
+
 
 
 
