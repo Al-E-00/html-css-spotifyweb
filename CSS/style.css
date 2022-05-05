@@ -73,6 +73,10 @@ body {
     align-items: center;
 }
 
+.icon-nav-button {
+    position: relative;
+}
+
 .icon-nav-button img {
     width: 1.6rem;
     opacity: .6;
@@ -114,11 +118,14 @@ body {
     background-color: var(--color-primary-nt-hover);
 }
 
-.new-playlist-button > h4 {
+.new-playlist-button > button {
+    background-color: transparent;
+    border: 0;
     color: var(--color-primary-nt-hover);
     padding-left: .4rem;
-    font-weight: 400;
+    font-weight: 600;
     font-size: var(--text-normal);
+    cursor: pointer;
 }
 
 /* list playlist  */
@@ -128,7 +135,7 @@ body {
     flex-grow: 1;
 }
 
-.list-playlist ul {;
+.list-playlist ul {
     list-style: none;
 }
 
@@ -466,6 +473,7 @@ body {
     border-radius: 2rem;
     height: .2rem;
     flex-grow: 1;
+    display: flex;
 }
 
 .live-progression-bar {
@@ -474,6 +482,15 @@ body {
     border-radius: 2rem;
     background-color: var(--color-primary-hover);
     opacity: .8;
+}
+
+.dot-progression-bar {
+    display: none;
+    height: .7rem;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background-color: var(--color-primary-hover);
+    align-self: center;
 }
 
 .time span {
@@ -545,7 +562,9 @@ body {
     color: var(--color-primary-hover);
 }
 
-.genre-music-selection ul a:focus:before {
+/* ----style "IN EVIDENZA" button active by default ------- */
+
+.genre-music-selection ul a.active:before {
     content : "";
     position: absolute;
     left    : 50%;
@@ -557,22 +576,94 @@ body {
     border-bottom:1px solid rgb(173, 255, 46);
 }
 
-.genre-music-selection ul a:focus {
+.genre-music-selection ul a.active {
     color: var(--color-primary-hover);
 }
 
+.nav-button-app:hover .icon-nav-button img, .nav-button-app:hover .text-nav-button a{
+    opacity: 1;
+    color: var(--color-primary-hover);
+}
+
+/* --------------- end style "IN EVIDENZA" active by default -------------- */
 
 
 
+/* style "Home" button active by default */
+
+.nav-button-app .icon-nav-button.active:before {
+    content : "";
+    position: absolute;
+    left  : -60%;
+    top: 0px;
+    bottom: 0px;
+    height  : 90%;
+    width   : 1px;
+    border-left:1px solid rgb(173, 255, 46);
+}
+
+.nav-button-app .icon-nav-button img.active {
+    opacity: 1;
+}
+
+.text-nav-button a.active {
+    color: var(--color-primary-hover);
+}
+
+/* --------------- end style "Home" active by default -------------- */
 
 
+.new-playlist-button:hover a {
+    background-color: var(--color-primary-hover);
+}
 
+.new-playlist-button:hover button {
+    color: var(--color-primary-hover);
+}
 
+.list-playlist ul li:hover a{
+    color: var(--color-primary-hover);
+}
 
+.app-install:hover img {
+    opacity: 1;
+}
 
+.app-install:hover a {
+    color: var(--color-primary-hover);
+}
 
+.name-music-active span:hover {
+    color: var(--color-primary-hover);
+    position: relative;
+}
 
+.name-music-active span:hover:before {
+    content:"";
+    position: absolute;
+    bottom: -0.5px;
+    border-bottom: 1px solid var(--color-primary-hover);
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+}
 
+.music-tools button i:hover {
+    color: var(--color-primary-hover);
+}
+
+.progression-bar:hover .live-progression-bar {
+    background-color:rgb(173, 255, 46);
+    position: relative;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.progression-bar:hover .dot-progression-bar {
+    display: inline-block;
+    opacity: 1;
+}
 
 
 

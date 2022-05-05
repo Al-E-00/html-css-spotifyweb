@@ -31,11 +31,11 @@
                     </div>
 
                     <div class="nav-button-app">
-                        <div class="icon-nav-button">
-                            <img src="img/home.svg" alt="Home img button">
+                        <div class="active icon-nav-button">
+                            <img class="active" src="img/home.svg" alt="Home img button">
                         </div>
-                        <div class="text-nav-button">
-                            <a href="#">Home</a>
+                        <div class=" text-nav-button">
+                            <a class="active" href="#">Home</a>
                         </div>
                     </div>
 
@@ -67,7 +67,7 @@
                     </div>
                     <div class="new-playlist-button d-flex">
                         <a class="flex-content-centered" href="#">+</a>
-                        <h4 class="flex-content-centered">Crea Playlist</h4>
+                        <button class="flex-content-centered">Crea Playlist</button>
                     </div>
                     <div class="list-playlist d-flex">
                         <ul>
@@ -114,7 +114,7 @@
                     <div class="scroll-album-section d-flex">
                         <div class="genre-music-selection">
                             <ul>
-                                <li><a href="#">In evidenza</a></li>
+                                <li><a class="active" href="#">In evidenza</a></li>
                                 <li><a href="#">Podcast</a></li>
                                 <li><a href="#">Classifiche</a></li>
                                 <li><a href="#">Generi e mood</a></li>
@@ -311,7 +311,10 @@
                             <span>0:25</span>
                         </div>
                         <div class="progression-bar">
-                            <div class="live-progression-bar"></div>
+                            <div class="live-progression-bar d-flex">
+                                <div class="dot-progression-bar"></div>
+                            </div>
+                            
                         </div>
                         <div class="time">
                             <span>4:35</span>
