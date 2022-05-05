@@ -289,9 +289,28 @@ body {
     width: calc(100% / 6);
 }
 
+.image-music-box {
+    position: relative;
+}
+
 .image-music-box > img {
     width: 100%;
     aspect-ratio: 1/1;
+}
+
+.hover-play-btn button {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.hover-play-btn button i {
+    color: var(--color-primary-hover);
+    font-size: 3rem;
 }
 
 .rounded-music-box {
@@ -503,6 +522,52 @@ body {
     background-color: var(--color-primary-hover);
     opacity: .8;
 }
+
+/* ----------- ANIMATION SECTION -------------- */
+
+
+.image-music-box:hover img{
+    opacity: .4;
+}
+
+.image-music-box:hover .hover-play-btn  button{
+    display: inline-block;
+    color: white;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------- MEDIA QUERY SECTION ----------- */
 
