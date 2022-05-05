@@ -801,6 +801,29 @@ body {
     }
 }
 
+.top-bar button:hover {
+    transform: scale(1.1);
+    animation-name: update-btn;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes update-btn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 
 
