@@ -259,6 +259,7 @@ body {
     font-size: var(--text-normal);
     font-weight: 600;
     color: var(--color-primary-nt-hover);
+    position: relative;
 }
 
 /* album box-section */
@@ -544,12 +545,21 @@ body {
     color: var(--color-primary-hover);
 }
 
-.genre-music-selection ul a:hover {
-    border-bottom: 1px solid #ADFF2E;
-    border-bottom: 
+.genre-music-selection ul a:focus:before {
+    content : "";
+    position: absolute;
+    left    : 50%;
+    transform: translateX(-50%);
+    bottom  : -4px;
+    height  : 2px;
+    border-radius: 2rem;
+    width   : 35%;
+    border-bottom:1px solid rgb(173, 255, 46);
 }
 
-
+.genre-music-selection ul a:focus {
+    color: var(--color-primary-hover);
+}
 
 
 
