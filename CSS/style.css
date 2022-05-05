@@ -277,14 +277,12 @@ body {
 
 .music-box-section {
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .music-box {
-    padding: 1rem 0;
-    width: calc((100% / 6) - 1rem);
-
+    padding: 1rem .5rem;
+    width: calc(100% / 6);
 }
 
 .image-music-box > img {
@@ -502,9 +500,8 @@ body {
 
 @media screen and (max-width: 900px) {
     .music-box {
-        padding: 1rem 0;
-        width: calc((100% / 4) - 1rem);
-        flex-wrap: wrap;
+        padding: 1rem .5rem;
+        width: calc(100% / 4);
     }
 
 }
