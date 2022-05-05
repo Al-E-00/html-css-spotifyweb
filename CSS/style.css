@@ -246,6 +246,7 @@ body {
     justify-content: center;
     gap: 1.4rem;
     padding: .7rem 0;
+    flex-wrap: wrap;
 }
 
 .genre-music-selection ul a {
@@ -278,11 +279,6 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    min-width: 700px;
-}
-
-.box-section-space-between {
-    justify-content: space-between;
 }
 
 .music-box {
@@ -504,10 +500,11 @@ body {
 /* ------- MEDIA QUERY SECTION ----------- */
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .music-box {
         padding: 1rem 0;
         width: calc((100% / 4) - 1rem);
         flex-wrap: wrap;
     }
+
 }
