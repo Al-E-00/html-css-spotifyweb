@@ -273,19 +273,20 @@ body {
 
 .played-section {
     flex-direction: column;
-    padding: .4rem 1rem;
+    padding: .4rem 0rem;
     flex-shrink: 0;
 }
 
 .played-section > h2 {
     color: var(--color-primary-hover);
+    padding: 0 1rem;
 }
 
 .played-section > span {
     font-size: var(--text-small);
     color: var(--color-primary-nt-hover);
     font-weight: 600;
-    padding: .7rem 0;
+    padding: .7rem 1rem;
 
 }
 
@@ -904,5 +905,11 @@ body {
 
     .other-tools-section {
         flex-basis: 40px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .top-bar { 
+        display: none;
     }
 }
