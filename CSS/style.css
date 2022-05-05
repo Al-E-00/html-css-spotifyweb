@@ -331,7 +331,7 @@ body {
 .player {
     flex-shrink: 0;
     justify-content: space-between;
-    padding: .4rem .5rem;
+    padding: .8rem .5rem;
     background-color: #282828;
 }
 
@@ -379,6 +379,16 @@ body {
     padding-left: 2.3rem;
 }
 
+.music-tools button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.music-tools button i {
+    color: var(--color-primary-nt-hover);
+}
+
 /* central-bar progression music */
 
 /* top part central bar  */
@@ -397,17 +407,22 @@ body {
     align-items: center;
 }
 
-.player-button i {
-    padding: .7rem 1rem;
-    justify-content: center;
-    align-items: center;
+.player-button button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
 }
 
-.player-button i:nth-child(3) {
-    border: 2px solid var(--color-primary-hover);
-    border-radius: 50%;
-    aspect-ratio: 1/1;
-    display: flex;
+.player-button button i {
+    padding: .2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary-hover);
+    font-size: 1.1rem;
+}
+
+.player-button button:nth-child(3) i {
+    font-size: 1.4rem;
 }
 
 
@@ -450,13 +465,22 @@ body {
     display: flex;
     gap: .8rem;
     align-items: center;
-    flex-basis: 160px;
-    min-width: 130px;
+    flex-basis: 200px;
+    min-width: 140px;
 }
 
 .icon-tools {
     display: flex;
     gap: .8rem;
+}
+
+.icon-tools button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.icon-tools button i {
     color: var(--color-primary-hover);
 }
 
@@ -475,4 +499,15 @@ body {
     border-radius: 2rem;
     background-color: var(--color-primary-hover);
     opacity: .8;
+}
+
+/* ------- MEDIA QUERY SECTION ----------- */
+
+
+@media screen and (max-width: 700px) {
+    .music-box {
+        padding: 1rem 0;
+        width: calc((100% / 4) - 1rem);
+        flex-wrap: wrap;
+    }
 }
