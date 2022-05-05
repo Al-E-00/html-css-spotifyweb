@@ -303,6 +303,7 @@ body {
 
 .rounded-music-box > img {
     object-fit: contain;
+    display: block;
 }
 
 .text-music-box {
