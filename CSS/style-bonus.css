@@ -483,7 +483,7 @@ body {
 }
 
 .live-progression-bar {
-    width: 25%;
+    width: 100%;
     height: 100%;
     border-radius: 2rem;
     background-color: rgba(255, 255, 255, 0.832);
@@ -557,11 +557,29 @@ body {
     display: none;
 }
 
-/* ----------- ANIMATION SECTION -------------- */
+
+
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ----------- HOVER SECTION -------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
 
 
 .image-music-box:hover img{
     opacity: .4;
+    transition-property: opacity;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+
 }
 
 .image-music-box:hover .hover-play-btn  button{
@@ -572,10 +590,14 @@ body {
 
 .top-bar button:hover {
     transform: scale(1.1);
+    
 }
 
 .genre-music-selection ul a:hover {
     color: var(--color-primary-hover);
+    transition-property: color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 /* ----style "IN EVIDENZA" button active by default ------- */
@@ -631,14 +653,23 @@ body {
 
 .new-playlist-button:hover a {
     background-color: var(--color-primary-hover);
+    transition-property: background-color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 .new-playlist-button:hover button {
     color: var(--color-primary-hover);
+    transition-property: color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 .list-playlist ul li:hover a{
     color: var(--color-primary-hover);
+    transition-property: color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 .app-install:hover img {
@@ -647,11 +678,17 @@ body {
 
 .app-install:hover a {
     color: var(--color-primary-hover);
+    transition-property: color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 .name-music-active span:hover {
     color: var(--color-primary-hover);
     position: relative;
+    transition-property: color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 .name-music-active span:hover:before {
@@ -683,10 +720,16 @@ body {
 
 .player-button button:nth-child(3):hover i {
     transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 .player-button button:hover i{
     transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 .volume-bar:hover .volume-bar-progression {
@@ -700,7 +743,66 @@ body {
 
 .icon-tools button:hover i {
     transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
+
+
+
+
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -----------------------ANIMATION SECTION----------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+
+.image-music-box:hover .hover-play-btn button i{
+    animation-name: play-btn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes play-btn {
+    0% { 
+        color: rgba(255, 255, 255, 0.622);
+        transform: scale(1);
+    }
+    50% { 
+        color: white;
+        transform: scale(1.1);
+    }
+    100% { 
+        color: rgba(255, 255, 255, 0.622);
+        transform: scale(1);
+    }
+}
+
+.live-progression-bar {
+    animation-name: live-music-bar;
+    animation-duration: 30s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes live-music-bar {
+    0% { 
+        width: 0%;
+    }
+    
+    100% { 
+        width: 100%;
+    }
+}
+
+
+
 
 
 
