@@ -221,7 +221,7 @@ body {
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.6);
     color: var(--color-primary-hover);
-
+    margin-right: .3rem;
 }
 
 .top-bar button a {
@@ -536,7 +536,18 @@ body {
     z-index: 1;
 }
 
+.top-bar button:hover {
+    transform: scale(1.1);
+}
 
+.genre-music-selection ul a:hover {
+    color: var(--color-primary-hover);
+}
+
+.genre-music-selection ul a:hover {
+    border-bottom: 1px solid #ADFF2E;
+    border-bottom: 
+}
 
 
 
