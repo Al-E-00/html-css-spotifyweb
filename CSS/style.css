@@ -62,6 +62,10 @@ body {
     padding: 1rem 0;
 }
 
+.logo-section > img:nth-child(2) {
+    display: none;
+}
+
 /* navigation inside app button */
 
 .nav-button-app {
@@ -245,7 +249,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 1.4rem;
-    padding: .7rem 0;
+    padding: .7rem 2rem;
     flex-wrap: wrap;
 }
 
@@ -261,7 +265,7 @@ body {
 
 .played-section {
     flex-direction: column;
-    padding: .8rem 1rem;
+    padding: .4rem 1rem;
 }
 
 .played-section > h2 {
@@ -339,6 +343,7 @@ body {
     width: 3rem;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .image-active-music > img {
@@ -352,6 +357,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .name-music-active h3 {
@@ -370,7 +376,8 @@ body {
     display: flex;
     gap: .8rem;
     align-items: center;
-    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    padding-left: 1.3rem;
 }
 
 .music-tools button {
@@ -393,6 +400,7 @@ body {
     justify-content: center;
     width: 40%;
     max-width: 500px;
+    margin: 0 .6rem;
 }
 
 .player-button {
@@ -461,6 +469,7 @@ body {
     align-items: center;
     flex-basis: 200px;
     min-width: 140px;
+    padding-left: 1.3rem;
 }
 
 .icon-tools {
@@ -484,7 +493,7 @@ body {
     background-color: var(--color-primary-nt-hover);
     border-radius: 2rem;
     height: .2rem;
-    flex-grow: 3;
+    flex-grow: 2;
 }
 
 .volume-bar-progression {
@@ -504,4 +513,87 @@ body {
         width: calc(100% / 4);
     }
 
+    .volume-bar {
+        flex-shrink: 1;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .music-box {
+        padding: 1rem .5rem;
+        width: calc(100% / 2);
+    }
+    .music-tools {
+        color: var(--color-primary-nt-hover);
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+        align-items: center;
+        padding-right: .8rem;
+        padding-left: .6rem;
+        justify-content: center;
+    }
+    
+    .name-music-active {
+        flex-shrink: 1;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .sidebar {
+        width: 45px;
+        padding: .2rem .6rem;
+        justify-content: space-between;
+    }
+
+    .logo-section > img {
+        display: none;
+    }
+    
+    .logo-section > img:nth-child(2) {
+        display: inline-block;
+        width: 1.7rem;
+        padding: .3rem 0;
+    }
+
+    .text-nav-button a {
+        display: none;
+    }
+
+    .playlist-section {
+        display: none;
+    }
+
+    .app-install{
+        justify-content: space-evenly;
+        border-bottom: 0;
+        padding: .4rem 0;
+    }
+
+    .app-install > a {
+        display: none;
+    }
+
+    .app-install > img {
+        width: 1rem;
+        align-items: center;
+        padding-right: .2rem;
+    }
+
+    .name-account {
+        justify-content: center;
+    }
+
+    .name-account > h5 {
+        display: none;
+    }
+
+    .container-img-account {
+        width: 20px;
+        height: 20px;
+    }
+
+    .container-img-account img{
+        width: .8rem;
+    }   
 }
